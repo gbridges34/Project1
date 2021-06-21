@@ -1,6 +1,9 @@
--   [The functions](#the-functions)
--   [Pulling Data](#pulling-data)
--   [The Graphs](#the-graphs)
+-   [Introduction](#introduction)
+    -   [Required Packages](#required-packages)
+    -   [This Vignette](#this-vignette)
+    -   [The functions](#the-functions)
+    -   [Pulling Data](#pulling-data)
+    -   [The Graphs](#the-graphs)
 
     knitr::opts_chunk$set(fig.path='Figs/')
 
@@ -13,18 +16,25 @@
     require(tidyr)
     require(dplyr)
 
-\#Introduction
+Introduction
+============
 
-\#\#Required Packages The following packages are required for running
-this Vignette: -httr -jsonlite -ggplot2 -tidyr -dplyr
+Required Packages
+-----------------
 
-\#\#This Vignette This vignette discusses a function that was produced
-to allow for the relatively easy querying of the NHL records and stats
-API’s. These API’s have statistics and information, both current and
-historical, for all the teams that are currently in or were once a part
-of the [NHL](https://www.nhl.com/). It also discusses some of the
-plotting that can be done using this information. This is what an NHL
-player looks like courtesy of the NHL:  
+The following packages are required for running this Vignette: -httr
+-jsonlite -ggplot2 -tidyr -dplyr
+
+This Vignette
+-------------
+
+This vignette discusses a function that was produced to allow for the
+relatively easy querying of the NHL records and stats API’s. These API’s
+have statistics and information, both current and historical, for all
+the teams that are currently in or were once a part of the
+[NHL](https://www.nhl.com/). It also discusses some of the plotting that
+can be done using this information. This is what an NHL player looks
+like courtesy of the NHL:  
 ![](NHL_players.jpg) The above is some close-to-the-goal action between
 the goalie and offensive player of opposing teams. Similarly to soccer,
 the goalie in hockey can touch the puck with more of their body than can
